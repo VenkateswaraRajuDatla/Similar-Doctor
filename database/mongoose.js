@@ -1,4 +1,4 @@
 var mongoose=require('mongoose');
-mongoose.connect('mongodb://formdetails:1234@ds117539.mlab.com:17539/formdetails');
+mongoose.connect( process.env.MONGODB_URI || 'mongodb://localhost:27017/Doctors');
 
 module.exports={mongoose}
