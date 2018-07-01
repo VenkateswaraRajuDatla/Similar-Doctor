@@ -19,7 +19,7 @@
           $(function() {
             var i = 0;
             $.getJSON(`/doc-prof/${id}`, function(obj){
-              document.write('<center><h2 >Doctor information</h2></center>');
+              document.write('<center><h2 style="color:blue;">Doctor information</h2></center>');
               document.write('<center><p >Name of the Doctor: ' + obj.doctorlist['name'] + '</p></center>');
               document.write('<center><p>Gender: ' + obj.doctorlist['gender'] + '</p></center>');
               document.write('<center><p>Speciality: ' + obj.doctorlist['field'] + '</p></center>');
@@ -30,7 +30,7 @@
               for(var i=0;i<obj.doctorlist.length;i++)
               {  document.write('<center><p>' + obj.doctorlist[i].name + '</p></center>');
             }
-              document.write('<a href="index.html">Back to the list</a>');
+              document.write('<center><a href="index.html">Back to the list</a><center>');
             });
           });
 </script>
