@@ -19,7 +19,7 @@ $(function(){
   var i = 0;
   $.getJSON("/doctorlist",function(obj){
     document.write('<center><h2 >Name of the Doctors</h2></center>');
-    document.write('<center><p>(click on the name to see their details)<p></center>');
+    document.write('<center><p>(click on the Name to see their details)<p></center>');
     for(var i=0;i<obj.doctorlist.length;i++)
     {  document.write('<center><p onclick="someFunction(\'' + obj.doctorlist[i].field +'|'+ obj.doctorlist[i]._id + '\')" >' + obj.doctorlist[i].name + '</p></center>');
 
